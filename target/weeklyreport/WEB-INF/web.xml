@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <javaee:display-name>Archetype Created Web Application</javaee:display-name>
+    <servlet>
+        <javaee:description></javaee:description>
+        <javaee:display-name>Register</javaee:display-name>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.jin.weeklyreport.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+</web-app>
