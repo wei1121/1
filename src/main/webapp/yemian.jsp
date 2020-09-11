@@ -33,7 +33,7 @@
 <form name=form1 action="form.asp" method=post target=_blank>
 <select name="person" onChange="this.form.submit()">
 <option>=== 请选您的姓名 ===
-<option>王佳乐
+<option>金雨薇
 </select>
 </form>
 </center>
@@ -47,13 +47,14 @@
 资料列表</h3>
 <ul>
 <li>每周填写之资料：
-	<a target=_blank href="listEachWeek.asp?weekDiff=0">本周</a>、
+	<!--<a target=_blank href="listEachWeek.asp?weekDiff=0">本周</a>、-->
+	 <a href ="benzhou.jsp">本周、</a>
 	<a target=_blank href="listEachWeek.asp?weekDiff=-1">前一周</a>、
 	<a target=_blank href="listEachWeek.asp?weekDiff=-2">前两周</a>、
 	<a target=_blank href="listEachWeek.asp?weekDiff=-3">前三周</a>、
 	<a target=_blank href="listEachWeek.asp?weekDiff=-4">前四周</a>
 <li>每个人的历史资料：
-<a target=_blank href=listEachPerson.asp?person=王佳乐>王佳乐</a>
+<a target=_blank href=listEachPerson.asp?person=金雨薇>金雨薇</a>
 <li><a target=_blank href="listAllPersonLastRecord.asp">每个人的最後一笔资料</a>
 </ul>
 <hr>
