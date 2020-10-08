@@ -80,3 +80,12 @@
 0:0:0:0:0:0:0:1 - - [11/Sep/2020:17:48:56 +0800] "GET /yemian.jsp HTTP/1.1" 200 2578 http-bio-8080-exec-5 1
 0:0:0:0:0:0:0:1 - - [11/Sep/2020:17:48:56 +0800] "GET /redball.gif HTTP/1.1" 200 2083 http-bio-8080-exec-5 1
 0:0:0:0:0:0:0:1 - - [11/Sep/2020:17:49:01 +0800] "GET /benzhou.jsp HTTP/1.1" 200 674 http-bio-8080-exec-9 1
+0:0:0:0:0:0:0:1 - - [11/Sep/2020:18:02:17 +0800] "GET / HTTP/1.1" 200 2083 http-bio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [11/Sep/2020:18:02:20 +0800] "GET /register.jsp HTTP/1.1" 200 2039 http-bio-8080-exec-4 19
+0:0:0:0:0:0:0:1 - - [11/Sep/2020:18:02:21 +0800] "POST /register HTTP/1.1" 302 - http-bio-8080-exec-4 4
+0:0:0:0:0:0:0:1 - - [11/Sep/2020:18:02:21 +0800] "GET /yemian.jsp HTTP/1.1" 200 2578 http-bio-8080-exec-4 6
+0:0:0:0:0:0:0:1 - - [11/Sep/2020:18:02:21 +0800] "GET /redball.gif HTTP/1.1" 200 2083 http-bio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [11/Sep/2020:18:02:24 +0800] "GET /benzhou.jsp HTTP/1.1" 200 674 http-bio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [11/Sep/2020:18:02:27 +0800] "GET /yemian.jsp HTTP/1.1" 200 2578 http-bio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [11/Sep/2020:18:02:27 +0800] "GET /redball.gif HTTP/1.1" 200 2083 http-bio-8080-exec-4 6
+0:0:0:0:0:0:0:1 - - [11/Sep/2020:18:02:47 +0800] "GET /listEachPerson.asp?person=%E9%87%91%E9%9B%A8%E8%96%87 HTTP/1.1" 200 2083 http-bio-8080-exec-3 3
