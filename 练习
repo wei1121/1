@@ -1,0 +1,300 @@
+package youxi;
+import java.util.Scanner;
+public class youxi {
+	String name;//姓名
+	int price;//价格
+	float hp; //血量
+    int moveSpeed; //移动速度
+	  
+	    void keng(){
+	        System.out.println("坑队友！");
+	    }
+	   
+	    void Speed(int speed){
+	        moveSpeed = moveSpeed + speed;  //在原来的基础上增加移动速度
+	    }
+	      
+	    void legendary(){
+	        System.out.println("超神了！");
+	    }
+	     
+	    float getHp(){
+	        return hp;//获取当前的血量
+	    }
+
+	    void Blood(float blood){
+	        hp = hp+blood;//回血
+	    }
+	public static void main(String[] args) {
+	youxi a = new youxi();
+	a.name="血瓶";
+	a.price=50;
+	
+	youxi b= new youxi();
+	b.name="草鞋";
+	b.price=300;
+	
+	youxi c= new youxi();
+	c.name="长剑";
+	c.price=350;
+	
+	youxi d = new youxi();
+    d.name= "盖伦";
+    d.hp  = 500;
+    
+    System.out.println(d.name + " 当前的血量是 " +d.hp);
+    System.out.println("回血100");
+    d.Blood(100);
+    System.out.println("现在的血量是:" + d.hp);
+	}
+
+}
+//类的练习
+
+package youxi;
+
+public class bianliang {
+
+	double a=3.14;
+	double b=2.769643;
+	int c=365;
+	int d=12;
+	char e='吃';
+	boolean f=false;
+	String g="不可描述";
+	public static void main(String[] args) {
+	}
+}
+//变量练习
+
+package youxi;
+import java.util.Scanner;
+public class BMI {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("请输入身高(m)：");
+		float a=in.nextFloat();
+		System.out.println("请输入体重(kg)：");
+		float b=in.nextFloat();
+		float c=b/(a*a);
+		System.out.println("当前的BMI是："+c);
+	}
+}
+//BMI练习
+
+package youxi;
+import java.util.Scanner;
+public class caozuofu {
+
+	public static void main(String[] args) {
+	Scanner in = new Scanner(System.in);
+	int a=in.nextInt();
+	System.out.println("第一个整数："+a);
+	Scanner sc = new Scanner(System.in);
+	int b=in.nextInt();
+	System.out.println("第二个整数："+b);
+	System.out.println("两个数的和是："+(a+b));
+	}
+}
+//操作符练习
+
+package youxi;
+import java.util.Scanner;
+public class weekday {
+
+	public static void main(String[] args) {
+		System.out.println("今天是周几？");
+		Scanner in = new Scanner(System.in);
+		int a=in.nextInt();
+		String b=a>=6?"休息":"工作日";
+			System.out.println("今天是"+b);
+
+	}
+}
+//判断是否是周末
+
+package youxi;
+import java.util.Scanner;
+public class year {
+
+	public static void main(String[] args) {
+		System.out.println("请输入年份");
+		Scanner in=new Scanner(System.in);
+		int a=in.nextInt();
+		if((a%4==0 && a%100!=0) || a%400==0)
+		{
+			System.out.println(a+"是闰年");
+		}
+		else
+			System.out.println(a+"不是闰年");
+
+	}
+}
+//判断是否是闰年
+
+
+package youxi;
+
+public class flower {
+
+	public static void main(String[] args) {
+	
+	 for (int i = 100; i < 1000; i++) {
+		 
+		int a = i / 100;
+		int b = i / 10 % 10;
+		int c = i % 10;
+		int d = a * a * a + b * b * b + c * c * c;
+		if (d == i) 
+	   {
+		 System.out.println("找到水仙花数:" + i);
+	    }	 
+		        }
+		    }
+}
+//循环练习
+
+package youxi;
+import java.util.Scanner;
+public class qigai {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		int a=1;
+		int b=in.nextInt();
+		int i,j=0;
+		for(i=1;i<=b;i++)
+		{
+			j=j+a;
+			a=a*2;
+		}
+		System.out.println(j);
+	}
+}
+//循环练习
+
+
+package youxi;
+
+public class paixu {
+
+	public static void main(String[] args) {
+
+		        int a[] = new int[5];
+		        for (int i = 0; i < a.length; i++)
+		            a[i] = (int) (Math.random() * 100);//随机数
+		  
+		        for (int i = 0; i < a.length; i++) {
+		            System.out.print(a[i] + " ");
+		        }
+		        System.out.println(" ");
+		        // 选择法正排序
+		        for (int j = 0; j < a.length - 1; j++) {
+		            for (int i = j + 1; i < a.length; i++) {
+		                if (a[i] < a[j]) {
+		                    int temp = a[j];
+		                    a[j] = a[i];
+		                    a[i] = temp;
+		                }
+		            }
+		        }
+		 
+		        for (int i = 0; i < a.length; i++) {
+		            System.out.print(a[i] + " ");
+		        }
+		        System.out.println();
+		  
+		        // 冒泡法倒排序
+		  
+		        for (int j = 0; j < a.length; j++) {
+		            for (int i = 0; i < a.length - j - 1; i++) {
+		                if (a[i] < a[i + 1]) {
+		                    int temp = a[i];
+		                    a[i] = a[i + 1];
+		                    a[i + 1] = temp;
+		                }
+		            }
+		        }		 
+		        for (int i = 0; i < a.length; i++) {
+		            System.out.print(a[i] + " ");
+		        }	  
+		        System.out.println(" ");
+	}
+}
+//排序练习
+
+package youxi;
+
+public class shuzu {
+
+	public static void main(String[] args) {
+
+		        int a[] = new int[(int) (Math.random() * 5)+5];
+		        for (int i = 0; i < a.length; i++)
+		            a[i] = (int) (Math.random() * 100);
+		        int b[] = new int[(int) (Math.random() * 5)+5];
+		        for (int i = 0; i < b.length; i++)
+		            b[i] = (int) (Math.random() * 100);
+		         
+		        System.out.println("数组a的内容:");
+		        for (int i : a) {
+		            System.out.print(i+" ");
+		        }
+		        System.out.println();
+		        System.out.println("数组b的内容:");
+		        for (int i : b) {
+		            System.out.print(i+" ");
+		        }
+		        System.out.println();
+		         
+		        int c[] = new int[a.length+b.length];
+		        System.arraycopy(a, 0, c, 0, a.length);
+		        System.arraycopy(b, 0, c, a.length, b.length);
+		         
+		        System.out.println("数组c的内容:");
+		        for (int i : c) {
+		            System.out.print(i+" ");
+		        }
+		         
+		    }
+		}
+    //数组练习
+    
+package youxi;
+
+public class erwei {
+
+	public static void main(String[] args) {
+		   int a[][] = new int[5][5];
+		        for (int i = 0; i < a.length; i++) {
+		            for (int j = 0; j < a[i].length; j++) {
+		                a[i][j] = (int) (Math.random() * 100);
+		            }
+		        }
+		        // 打印这个数组的内容：
+		        for (int[] row : a) {
+		            for (int each : row) {
+		                System.out.print(each + "\t");
+		            }
+		            System.out.println();
+		        }
+		 
+		   int max = -1;// 最大值
+		        // 最大值的坐标
+		   int target_i = -1;
+		   int target_j = -1;
+		        for (int i = 0; i < a.length; i++) {
+		            for (int j = 0; j < a[i].length; j++) {
+		                if (a[i][j] > max) {
+		                    max = a[i][j];
+		                    target_i = i;
+		                    target_j = j;
+		                }
+		            }
+		        } 
+		        System.out.println("找出来最大的是:" + max);
+		        System.out.println("其坐标是[" + target_i + "][" + target_j + "]")；
+		    }
+		}
+    //二维数组练习
