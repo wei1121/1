@@ -52,3 +52,36 @@ public class four extends Hero implements Healer{
         System.out.println(name+" 加了一口血");
     }
 }
+
+3、回文数
+public class huiwen {
+
+	public static void main(String[] args) {
+		System.out.println("输出回文字符串：");
+		char[] m= new char[4];
+		for(char a='a';a<='d';a++)
+		{
+			for(char b='a';b<='d';b++)
+			{
+				for(char c='a';c<='d';c++)
+				{
+					for(char d='a';d<='d';d++)
+					{
+						m[0]=a;
+						m[1]=b;
+						m[2]=c;
+						m[3]=d;
+						if(m[0]==m[3] && m[1]==m[2])
+						{
+							System.out.print(m[0]);
+							System.out.print(m[1]);
+							System.out.print(m[2]);
+							System.out.print(m[3]);
+							System.out.println();
+						}
+					}
+				}
+			}
+		}
+		}
+	}
