@@ -85,3 +85,36 @@ public class huiwen {
 		}
 		}
 	}
+	
+4、查找
+package week8;
+
+public class MyBinarySearch {
+	public static int binarySearch(int[] srcArray, int des) {
+		int number = -1;
+		int l = 0, r = srcArray.length;
+		while (l != r) {
+			int m = (l + r) / 2;
+			if (srcArray[m] == des) {
+				number = des;
+				break;
+			} else if (srcArray[m] > des) {
+				r = m - 1;
+			} else
+				l = m + 1;
+		}
+		if (srcArray[l] == des) {
+			number = l;
+		}
+		number=number+1;
+		return number;
+	}
+
+	public static void main(String[] args) {
+		int[] srcArray = new int[] { 2, 5, 9, 7, 24, 11, 55, 99, 102, 79, 60 };
+		System.out.print("查找数字是数组中的：");
+		System.out.print("第"+binarySearch(srcArray, 55)+"个");
+
+	}
+
+}
