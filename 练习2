@@ -118,3 +118,61 @@ public class MyBinarySearch {
 	}
 
 }
+
+5、类
+package week8;
+import java.util.Scanner;
+public class TestRectangle {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		Rectangle rectangle=new Rectangle();
+		System.out.println("请输入四边形的长和宽");
+		double side1=input.nextDouble();
+		double side2=input.nextDouble();
+		rectangle=new Rectangle(side1,side2);
+		System.out.println("四边形面积为:"+rectangle.getArea());
+		System.out.println("四边形周长为:"+rectangle.getPerimeter());
+	}
+}
+package week8;
+public class Rectangle {
+	public double side1=1.0;//输入长和宽
+	public double side2=1.0;
+	public Rectangle() {
+		super();
+	}
+	
+	public Rectangle(double side1, double side2) {
+		super();
+		this.side1 = side1;
+		this.side2 = side2;
+	}
+
+	public double getSide1() {
+		return side1;
+	}
+	public void setSide1(double side1) {
+		this.side1 = side1;
+	}
+	public double getSide2() {
+		return side2;
+	}
+	public void setSide2(double side2) {
+		this.side2 = side2;
+	}
+	
+	public double getArea()//四边形面积
+	{
+		double a;
+		a=side1*side2;
+		return a;
+	}
+	
+	public double getPerimeter()//四边形周长
+	{
+		double a;
+		a=side1+side2;
+		return a;
+	}
+}
+
