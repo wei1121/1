@@ -267,3 +267,49 @@ public class Student {
 	}
 
 }
+
+6、字符串
+package Week10;
+import java.util.Scanner;
+public class Char {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		System.out.println("请输入第一个字符串");
+		String a=in.nextLine();
+		System.out.println("请输入第二个字符串");
+		String b=in.nextLine();
+		char[] m=a.toCharArray();
+		char[] n=b.toCharArray();
+		int count=0,temp=0;
+		int i,j,q;  
+		System.out.println(m.length);
+		System.out.println(n.length);
+		for(i=0;i<n.length;i++)
+		{
+			q=i;
+			count=0;
+			if(n[i]==m[0])
+			{
+				for(j=0;j<m.length;j++)
+				{
+					if(q<n.length)
+					{
+						if(n[q]==m[j])
+					  {
+						count++;
+						q++;
+					  }
+					}
+				}
+				if(count==m.length)
+				temp++;
+			}
+			
+		}
+		System.out.println("字符串a在字符串b中出现的次数为"+temp);
+		
+
+	}
+
+}
